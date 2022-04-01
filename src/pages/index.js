@@ -4,7 +4,8 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import PixiMinmimalTest from '@site/src/components/PixiMinmimalTest';
+// import PixiMinmimalTest from '@site/src/components/PixiMinmimalTest';
+import PixiBrowseronly from '@site/src/components/PixiMinmimalTest';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -31,7 +32,8 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-        <PixiMinmimalTest />
+        {/*<PixiMinmimalTest />*/}
+        <PixiBrowseronly />
     </Layout>
   );
 }
