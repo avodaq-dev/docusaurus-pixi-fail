@@ -21,7 +21,7 @@ export default function PixiBrowseronly() {
                     return () => {
                         app.destroy(true, true);
                     };
-                }, [Application, ref]);
+                }, [ref]);
 
                 return <div ref={ref} />;
             }}
